@@ -1,0 +1,162 @@
+@media (max-width: 991px) {
+   .header__search {
+        order: 1;
+        margin-right: 0;
+        width: 100%;
+   }
+   .search__input {
+        width: 100%;
+   }
+
+   .sorting {
+        padding-top: 20px;
+        padding-bottom: 20px;
+   }
+}
+
+@media(max-width: 768px) {
+    .logo {
+        flex: 1 1 auto;
+    }
+
+    .logo img {
+        max-width: 50px;
+    }
+
+    .logo__text {
+        margin-left: 10px;
+    }
+
+    .logo__title, .basket__summ, .basket__num {
+        font-size: 18px;
+    }
+
+    .logo__subtitle {
+        display: none;
+    }
+
+    .sorting__categories {
+        overflow-x: scroll;
+    }
+
+    .sorting__categories::-webkit-scrollbar {
+        width: 15px;
+        height: 3px;
+        background-color: #ffffff;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #eeaa00;
+        border-radius: 9em;
+        box-shadow: inset 1px 1px 10px #f3faf7;
+    }
+
+    .categories__list {
+        flex-wrap: nowrap;
+        column-gap: 10px;
+        padding-bottom: 15px;
+    }
+
+    .categories__item {
+        flex: 1 0 auto;
+    }
+    
+}
+
+
+@media(max-width: 530px) {
+    .logo__title {
+        display: none;
+    }
+
+    .sorting {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .search__input::placeholder {
+        font-size: 12px;
+    }
+
+    .categories__item {
+        font-size: 12px;
+    }
+
+    .search__input, .basket {
+        height: 40px;
+    }
+
+    .filter-dropdown {
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    .filter-dropdown__default {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .filter-dropdown__list {
+        width: 100%;
+        position: static;
+        padding-top: 0;
+        padding-bottom: 0;
+        box-shadow: none;
+        margin-left: 15px;
+        border-radius: 0;
+        opacity: 1;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+    }
+
+    .filter-dropdown__item {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: gray;
+    }
+
+    .filter-dropdown__item:hover {
+        background-color: transparent;
+    }
+
+    .show {
+        height: auto;
+        margin-top: 15px;
+        transition: all 0.3s;
+    }
+
+    .products__item {
+        flex: 0 1 100%;
+    }
+
+    .products__item-dough button, .products__item-size button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .products__item-size {
+        margin-top: 30px;
+    }
+
+    .products__item-bottom {
+        flex-direction: column;
+    }
+
+    .products__item-addBasket {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
